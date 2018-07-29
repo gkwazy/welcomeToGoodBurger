@@ -1,0 +1,32 @@
+<h1>Welcome to good burger home of the good burger can i take your order.</h1>
+
+<h2>here are some burgers that you have ordered that you can eat.</h2>
+
+<ul>
+    {{#each burger_name}} {{#unless devoured}} {{> burgers/burgerButtons devoured=true}} {{/unless}} {{/each}}
+</ul>
+
+<h2>here are burger that have been devoured</h2>
+
+<ul>
+    {{#each burger_name}} {{#if devoured}} {{> burgers/burgerButtons devoured=false}} {{/if}} {{/each}}
+</ul>
+
+<h2>you can place a order here for you next burger.</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="ca">Burger Order:</label>
+        <input type="text" id="ca" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="devoured">When would you like to eat this burger</label>
+        <br>
+        <input type="radio" name="devoured" value="1" checked> eat it now!
+        <br>
+        <input type="radio" name="devoured" value="0"> save it for later.
+    </div>
+
+    <button type="submit">Add order</button>
+</form>
