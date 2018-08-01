@@ -7,7 +7,7 @@
     <div class="burgers_ready">
         <h2>here are some burgers that you have ordered that you can eat.</h2>
         <ul>
-            {{#each burger_name}} {{#unless devoured}} {{> burgerButtons devoured=true}} {{/unless}} {{/each}}
+            {{#each burger_name}} {{#unless devoured}} {{> burgerButtons devoured=1}} {{/unless}} {{/each}}
         </ul>
     </div>
 </div>
@@ -17,7 +17,7 @@
     <h2>here are burger that have been devoured</h2>
 
     <ul>
-        {{#each burger_name}} {{#if devoured}} {{> burgerButtons devoured=false}} {{/if}} {{/each}}
+        {{#each burger_name}} {{#if devoured}} {{> burgerButtons devoured=0}} {{/if}} {{/each}}
     </ul>
 </div>
 <div class="order">
