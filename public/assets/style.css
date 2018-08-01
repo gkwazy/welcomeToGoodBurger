@@ -22,15 +22,17 @@ li {
   }
   .burgers_ready{
 float: left;
-color:green;
+background-color: #4682B4;
 width:33%;
 margin:30px 30px;
+height:280px;
   }
   .burgers_eaten{
     float:right;
-    color:red;
+    background-color: #4682B4;
     width:33%;
     margin:30px 30px;
+    height:280px;
   }
   .pic{
   
@@ -40,17 +42,22 @@ margin:30px 30px;
     margin-left:auto;
     margin-right:auto;
     background-repeat:no-repeat;
+    position: relative;
     
   }
   #title{
     background-color:#4682B4;
-    position: relative;;
+    position: relative;
     left:0;
     top:0;
     width:110%;
+    height: 100px;
     padding:0,0px;
-    
-
+    margin-top:0;
+    text-align: center;
   }
-
+.order{
+  background-color: #4682B4;
+  height:300px;
+}
   
